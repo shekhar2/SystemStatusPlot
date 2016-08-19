@@ -13,6 +13,7 @@ def plotGraph(inputFile, process):
     status = []
     time = []
     firstLine = True
+    stat = ["up", "down"]
 
 
     try:
@@ -23,7 +24,7 @@ def plotGraph(inputFile, process):
                 if not statmatch:
                     continue
 
-                if statmatch.group(num_group).lower() == "up" or statmatch.group(num_group).lower() == "down":
+                if statmatch.group(num_group).lower() in stat::
 
                     if firstLine:
                         laststatus = statmatch.group(num_group).lower()
