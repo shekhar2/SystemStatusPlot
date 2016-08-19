@@ -24,7 +24,7 @@ def plotGraph(inputFile, process):
                 if not statmatch:
                     continue
 
-                if statmatch.group(num_group).lower() in stat::
+                if statmatch.group(num_group).lower() in stat:
 
                     if firstLine:
                         laststatus = statmatch.group(num_group).lower()
